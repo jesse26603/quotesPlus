@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hayden's Quotes</title>
     <link rel="stylesheet" href="styles.css">
-    <script></script>
+    <script> 
+    function quoteMe(){
+        try{
+            const findQuote = fetch('quotes.json');
+            const quote = Response.json();
+        }
+        catch(error){
+            console.error("WHOOPSIES!");
+        }
+    }
+    </script>
 </head>
 <body>
-    <h1>Wise Words of Hayden Parker Forepenius</h1>
-    <img src="img\hayden.jpg" alt="">
+    <div class="bgimg"></div>
+    <div>
+        <h1>Wise Words of Hayden Parker Forepenius</h1>
+    </div>
+    <img src="img\hayden.jpg" alt="" id="hayden">
     <div id="quoteBox"></div>
-    <button onclick="quoteMe()">quote!</button>
+    <button onclick="quoteMe()">Quoth the Raven Nevermore Nevermore!</button>
 </body>
 </html>
