@@ -16,7 +16,7 @@
             "My wife left me and went to alaska to marry steve harvey",
             "I have several wives one of them ran away nevermore nevermore quoth the raven",
             "I have boils on my skin",
-            "Mr.P: \"What? Are you shoe shopping?\" Hayden: \"It was Robert\".",
+            "Mr. P: \"What? Are you shoe shopping?\" Hayden: \"It was Robert\".",
             "I'm gonna marry your cousin if she plays pixel gun 3D",
             "*drumming on kneecaps intensifies*",
             "I'm gonna make jerky out of you",
@@ -136,7 +136,7 @@
             "Blud me serious I will fish you with my giant throbbing fish",
             "It was not blackmail. Just a simple trade offer",
             "Slay bae",
-            "My mom told me I shouldn't be gaming with mr. smith cuz its not professional 😭",
+            "My mom told me I shouldn't be gaming with Mr. Smith cuz its not professional 😭",
             "Is Steven rich now? Is he gonna own us now?",
             "You want this dog?",
             "Huggy wuggy",
@@ -193,22 +193,22 @@
             "Dirty chemicals inside me",
             "Stimulate me father",
             "Connor mom definitely a w",
-            "I found mr smith's house on zillow! So spacious!",
+            "I found Mr. Smith's house on zillow! So spacious!",
             "The holy juices my son and weep",
             "Video gaming inside me",
             "I'm not gonna read this",
             "I'm better than you",
             "Joey you're an icel",
-            "Legend has it hes still black",
+            "Legend has it I still need milk",
             "I'm moving to Mumbai and becoming a shoe maker",
             "If any of you are my father please show your face",
             "Is it because you were raised by rednecks",
             "No, it was because of cacashooter",
-            "I told smith you were actively trying to destroy him now he lives in fear of you Steven",
-            "He (mr smith) blocked me",
-            "We need a minigame where you deliver cacashooter to smith",
-            "Relax its just a abnormally large smith moment soon he'll reach post-smith clarity",
-            "Basically this kid in bachas class is using the formbar and mr smith keeps coming around sniffing for him",
+            "I told Smith you were actively trying to destroy him now he lives in fear of you Steven",
+            "Mr. Smith blocked me",
+            "We need a minigame where you deliver cacashooter to Smith",
+            "Relax its just a abnormally large Smith moment soon he'll reach post-Smith clarity",
+            "Basically this kid in bachas class is using the formbar and Mr. Smith keeps coming around sniffing for him",
             "We must conjoin!",
             "Welcome to the bagel jungle we got cream cheese",
             "MR SMITH WHY DID YOU MAKE YOUR CODE SO CRINGE",
@@ -260,7 +260,7 @@
             "Robert",
             "This is what ray would look like if ray got a low taper fade",
             "Daddys coming",
-            "When Roberts cousin hears my song shes gonna say Oh my god now my ovaries are screaming",
+            "When Roberts cousin hears my song shes gonna say \"Oh my god now my ovaries are screaming\"",
             "When are you gonna kiss me?",
             "Steven does not care about the consequences of his actions",
             "Tooty frooty",
@@ -303,7 +303,7 @@
             "We have to talk about the banana prices",
             "No",
             "I like to demolish your flesh with my molars",
-            "Im mr coke meister",
+            "Im Mr. coke meister",
             "If you notice little white nuggets in the back of your mouth you most likely have ligma",
             "It feels so good to be bad",
             "Put your little black hands in the bag",
@@ -329,7 +329,7 @@
             "My sisters both agree that my mew was good",
             "UGH! I just edged",
             "Yo! When's the second coming of Jesus? I wanna mew for him",
-            "Jesus is going to take one look at my jaw and say ‘WOW! You have a superior jawline you're going to heaven!'",
+            "Jesus is going to take one look at my jaw and say \"WOW! You have a superior jawline you're going to heaven!\"",
             "None, I am the lone wolf sigma male",
             "Mewing moment",
             "She said she was 10",
@@ -350,7 +350,7 @@
             "GYATT!",
             "ummy orse ock",
             "I get anti-semitic when I don't have my Diet Coke in the morning.",
-            "Yo Connor I went to your house and saw you mom it was awesome",
+            "Yo Connor I went to your house and saw your mom it was awesome",
             "SODA!!!!",
             "Salisbury steak",
             "SVEN!",
@@ -358,12 +358,35 @@
             "when the day comes to a close the socks come off hairy and larger than average for my age I reach my hand out to engage I firmly grasp it sweaty and hairy",
             "T'was the night before rizzmas",
             "SIGMA!",
-            "There's so many Mr.Smith quotes that should be on a shirt"
+            "There's so many Mr. Smith quotes that should be on a shirt",
+            "Yes kids are stupid",
+            "I remember doing css in 5th grade and I got told on for hacking",
+            "Eat food",
+            "anime cringe",
+            "cringe",
+            "non-sigma",
+            "make sure to put it on GitHub so I can look at it and make fun of you in my head"
         ];
         function quoteMe() {
             let quote = quotes[Math.floor(Math.random() * quotes.length)];
             document.getElementById("quoteBox").innerHTML = quote;
         }
+
+        let pass ='';
+        const passcode = "wide";
+        let audio = new Audio('audio/WIDE.wav');
+        document.addEventListener('keydown', function(event) {
+            pass += event.key;
+            if (pass === passcode) {
+                audio.play();
+                document.getElementById("hayden").style.width = "1500px";
+                document.getElementById("hayden").style.transition = "width 2s ease";
+            }
+            if (pass.length >= passcode.length) {
+                pass = '';
+            }
+        });
+
     </script>
 </head>
 
@@ -372,8 +395,7 @@
         <h1>Wise Words of Hayden Parker Frobenius</h1>
     </div>
     <img src="img\hayden.jpg" alt="" id="hayden">
-    <div id="quoteBox"></div>
-    <div id="number"></div>
+    <div id="quoteBox">Click the button for some wisdom</div>
     <button onclick="quoteMe()">Quoth the Raven Nevermore Nevermore!</button>
 </body>
 
