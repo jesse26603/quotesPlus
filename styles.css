@@ -4,6 +4,12 @@ body {
     padding: 0;
     background-image: url(img/background.png);
     background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
 }
 
 
@@ -21,10 +27,22 @@ button {
     padding: 10px 35px;
     display: block;
     font-size: 35px;
-    margin: 80px auto;
+    margin: 50px auto;
     cursor: pointer;
     border-radius: 8px;
     transition-duration: 0.3s;
+}
+
+#quoteBox{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    height: 20px;
+    text-align: center;
 }
 
 button:hover {
@@ -35,6 +53,7 @@ button:hover {
 }
 
 button:active {
+    transition-duration: 0.5ms;
     transform: scale(1);
 }
 
