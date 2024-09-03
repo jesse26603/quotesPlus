@@ -96,7 +96,7 @@
             "Steven needs to trademark that posture",
             "I GOT TO HAVE A GYATT",
             "This is a gyatt free edge zone. Take those sussy balls of yours somewhere else",
-            "No",
+            "No, petah! Stop! I'm gonna poop!",
             "Ballbasket moment",
             "El pupitre moment",
             "STOP FISTING I MEAN FISTING I MEAN FISTING I MEAN FISHING ME!",
@@ -373,7 +373,9 @@
             "bloody chewsd'ay",
             "oasis reunion bruv innit",
             "we're talking about dads funeral",
-            "one time my teacher was wearing a yamaka and told us the doctor made her wear it because she got hurt leaning back in the chair too far"
+            "one time my teacher was wearing a yamaka and told us the doctor made her wear it because she got hurt leaning back in the chair too far",
+            "No, petah! Stop! I'm a virgin",
+            "I don't think you have a right to an opinion"
         ];
         function quoteMe() {
             let quote = quotes[Math.floor(Math.random() * quotes.length)];
@@ -383,14 +385,12 @@
         let pass = '';
         const passcode = "wide";
         let audio = new Audio('audio/WIDE.wav');
-        let wideness = false
         document.addEventListener('keydown', function (event) {
             pass += event.key;
-            if (pass == passcode && wideness == false) {
+            if (pass == passcode) {
                 audio.play();
                 document.getElementById("hayden").style.width = "1500px";
                 document.getElementById("hayden").style.transition = "width 2s ease";
-                wideness = true
                 pass = ''
                 // console.log("widness")
             }
