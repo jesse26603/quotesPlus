@@ -365,28 +365,40 @@
             "anime cringe",
             "cringe",
             "non-sigma",
-            "make sure to put it on GitHub so I can look at it and make fun of you in my head"
+            "make sure to put it on GitHub so I can look at it and make fun of you in my head",
+            "playing wii is for good boys",
+            "im such a sigga- i mean sigma",
+            "femboy monday!",
+            "chewsday",
+            "bloody chewsd'ay",
+            "oasis reunion bruv innit",
+            "we're talking about dads funeral",
+            "one time my teacher was wearing a yamaka and told us the doctor made her wear it because she got hurt leaning back in the chair too far"
         ];
         function quoteMe() {
             let quote = quotes[Math.floor(Math.random() * quotes.length)];
             document.getElementById("quoteBox").innerHTML = quote;
         }
 
-        let pass ='';
+        let pass = '';
         const passcode = "wide";
         let audio = new Audio('audio/WIDE.wav');
-        document.addEventListener('keydown', function(event) {
+        let wideness = false
+        document.addEventListener('keydown', function (event) {
             pass += event.key;
-            if (pass === passcode) {
+            if (pass == passcode && wideness == false) {
                 audio.play();
                 document.getElementById("hayden").style.width = "1500px";
                 document.getElementById("hayden").style.transition = "width 2s ease";
+                wideness = true
+                pass = ''
+                // console.log("widness")
             }
             if (pass.length >= passcode.length) {
                 pass = '';
+                // console.log("nuh uh")
             }
         });
-
     </script>
 </head>
 
@@ -396,7 +408,7 @@
     </div>
     <img src="img\hayden.jpg" alt="" id="hayden">
     <div id="quoteBox">Click the button for some wisdom</div>
-    <button onclick="quoteMe()">Quoth the Raven Nevermore Nevermore!</button>
+    <button onclick="quoteMe()">Nevermore Nevermore Quoth the Raven</button>
 </body>
 
 </html>
