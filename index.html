@@ -394,11 +394,21 @@
             "I've been brown nosing since Nixon",
             "He's committed social atrocities such as beng short",
             "Ew it smells like stinky mustard in here",
-            "I have to mew but you just have a sleek jawline. Congratulations stevn"
+            "I have to mew but you just have a sleek jawline. Congratulations stevn",
+            "NAME YOUR COMMITS, YOU MONKEY"
         ];
+
+        const exclusiveQuote = quotes.find(quote => quote.includes("NAME YOUR COMMITS, YOU MONKEY"));
+
         function quoteMe() {
             let quote = quotes[Math.floor(Math.random() * quotes.length)];
             document.getElementById("quoteBox").innerHTML = quote;
+            if (quote == exclusiveQuote) {
+                console.log("exclusive quote")
+                document.getElementById("exclusive").style.visibility = "visible";
+            } else {
+                document.getElementById("exclusive").style.visibility = "hidden";
+            }
         }
 
         let pass = '';
@@ -424,8 +434,11 @@
 <body>
     <div>
         <h1>Wise Words of Hayden Parker Frobenius</h1>
+        <div>
+            <h2 id="exclusive">website exclusive!</h2>
+        </div>
     </div>
-    <img src="img\hayden.jpg" alt="" id="hayden">
+    <img src="img\hayden.jpg" alt="hayd" id="hayden">
     <div id="quoteBox">Click the button for some wisdom</div>
     <button onclick="quoteMe()">Nevermore Nevermore Quoth the Raven</button>
 </body>
