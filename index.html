@@ -375,11 +375,40 @@
             "we're talking about dads funeral",
             "one time my teacher was wearing a yamaka and told us the doctor made her wear it because she got hurt leaning back in the chair too far",
             "No, petah! Stop! I'm a virgin",
-            "I don't think you have a right to an opinion"
+            "I don't think you have a right to an opinion",
+            "Fard.",
+            "I eated it all sowwy",
+            "Project SODA!!!",
+            "This is my face when I have to start all over again. Hah hah hah hah hah!",
+            "why did you do that?",
+            "DO YOU KNOW WHO I AM???",
+            "Project STEVEN!",
+            "Deez nuth",
+            "St st st st sts st sty sty st sty sty sty styrofoam!",
+            "How does that happen??",
+            "please don't touch us",
+            "You bumbling buffons! I am trying to take the CIW pretest but I cannot concentrate with all the racket!",
+            "Sigma male on the Ohio streets i always bring the heat and meat",
+            "SCHTEVEN!",
+            "My brain hurtie the other way. Too easy. Complete waste on my time",
+            "I've been brown nosing since Nixon",
+            "He's committed social atrocities such as beng short",
+            "Ew it smells like stinky mustard in here",
+            "I have to mew but you just have a sleek jawline. Congratulations stevn",
+            "NAME YOUR COMMITS, YOU MONKEY"
         ];
+
+        const exclusiveQuote = quotes.find(quote => quote.includes("NAME YOUR COMMITS, YOU MONKEY"));
+
         function quoteMe() {
             let quote = quotes[Math.floor(Math.random() * quotes.length)];
             document.getElementById("quoteBox").innerHTML = quote;
+            if (quote == exclusiveQuote) {
+                console.log("exclusive quote")
+                document.getElementById("exclusive").style.visibility = "visible";
+            } else {
+                document.getElementById("exclusive").style.visibility = "hidden";
+            }
         }
 
         let pass = '';
@@ -405,8 +434,11 @@
 <body>
     <div>
         <h1>Wise Words of Hayden Parker Frobenius</h1>
+        <div>
+            <h2 id="exclusive">website exclusive!</h2>
+        </div>
     </div>
-    <img src="img\hayden.jpg" alt="" id="hayden">
+    <img src="img\hayden.jpg" alt="hayd" id="hayden">
     <div id="quoteBox">Click the button for some wisdom</div>
     <button onclick="quoteMe()">Nevermore Nevermore, Quoth the Raven</button>
 </body>
