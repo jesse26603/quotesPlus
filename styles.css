@@ -198,6 +198,43 @@ h1 {
 }
 
 
+@media (max-width: 1366px) {
+    body {
+        background-size: cover;
+    }
+
+    img {
+        width: 150px;
+        height: 225px;
+        margin: 15px auto;
+    }
+
+    button {
+        font-size: 30px;
+        padding: 8px 30px;
+        bottom: 10%;
+        margin: 35px auto;
+    }
+
+    #quoteBox {
+        padding: 15px;
+        margin: 30px auto;
+        bottom: 20%;
+        min-height: min-content;
+        max-height: max-content;
+    }
+
+    #quoteText {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+}
+
+
 @media (max-width: 768px) {
     body {
         background-size: cover;
