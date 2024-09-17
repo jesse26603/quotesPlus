@@ -391,5 +391,6 @@ const siteExclusiveQuotes = [
     "NAME YOUR COMMITS, YOU MONKEY",
     "ADD MORE EXCLUSIVE QUOTES",
     "it's perfectly natural to be addicted to minecraft sex question mark?",
-    "read up frickers"
+    "read up frickers",
+    "YOU GAVE JESSE SPACE AIDS"
 ];
