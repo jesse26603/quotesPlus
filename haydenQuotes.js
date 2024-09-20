@@ -392,5 +392,6 @@ const siteExclusiveQuotes = [
     "ADD MORE EXCLUSIVE QUOTES",
     "it's perfectly natural to be addicted to minecraft sex question mark?",
     "read up frickers",
-    "YOU GAVE JESSE SPACE AIDS"
+    "YOU GAVE JESSE SPACE AIDS",
+    'You know what you did, you dirty little rat boy.'
 ];

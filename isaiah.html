@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hayden's Quotes</title>
+    <title>Isaiah's Quotes</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-image" href="img/favicon.ico">
-    <script src="haydenQuotes.js"></script>
+    <script src="isaiahQuotes.js"></script>
     <script>
 
         const siteExclusiveIdentifier = '[site exclusive]';
@@ -31,7 +31,7 @@
             document.getElementById("quoteText").innerHTML = quote;
         }
 
-        // Wide Hayden Passcode
+        // Wide Isaiah Passcode
         // Gone change this to the konami code
         let pass = '';
         const passcode = "wide";
@@ -40,8 +40,8 @@
             pass += event.key;
             if (pass == passcode) {
                 audio.play();
-                document.getElementById("hayden").style.width = "1500px";
-                document.getElementById("hayden").style.transition = "width 2s ease";
+                document.getElementById("isaiah").style.width = "1500px";
+                document.getElementById("isaiah").style.transition = "width 2s ease";
                 pass = ''
                 // console.log("widness")
             }
@@ -55,14 +55,14 @@
 
 <body>
     <div>
-        <h1>Wise Words of Hayden Parker Frobenius</h1>
+        <h1>Wise Words of Isaiah Toby Knaby</h1>
     </div>
-    <img src="img\hayden.jpg" alt="hayd" id="hayden">
+    <img src="img\isaiah.jpg" alt="Isaiah" id="isaiah">
     <div id="quoteBox">
         <h2 id="exclusive">website exclusive!</h2>
         <h2 id="quoteText">Click the button for some wisdom</h2>
     </div>
-    <button onclick="quoteMe()">Nevermore Nevermore, Quoth the Raven</button>
+    <button onclick="quoteMe()">That's Nice. Do you want a quote?</button>
 </body>
 
 </html>
