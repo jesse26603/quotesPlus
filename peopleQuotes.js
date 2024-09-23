@@ -37,6 +37,11 @@ const quotes = [
 
 const siteExclusiveQuotes = [
 ['The soda just goes right through him. He has to go to the bathroom. - Mr. Yeager', 'connor'],
-['Woke up, Mixter Freethem. Woke up and smell the pronoun. - Lynn', 'lynn']
+['Woke up, Mixter Freethem. Woke up and smell the pronoun. - Lynn', 'lynn'],
+['Lemme see those BAKED BEANS - Chicken Sandwich', 'tyler'],
+['I\'m a 17 year old boy in a 17 year old boy\'s body. - Chicken Sandwich', 'tyler'],
+['I have the soul of someone my age - Chicken Sandwich', 'tyler'],
+['I am glad my uber-autism and extremely low social skills have contributed to your project - Chicken Sandwich', 'tyler'],
+['Me swinging my frank around - Jesse', 'jesse']
 ]
 //amogus sus

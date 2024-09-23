@@ -13,13 +13,18 @@
         const siteExclusiveIdentifier = '[site exclusive]';
         const siteExclusivesOnly = false;
 
-        const merged = quotes.concat(siteExclusiveQuotes.map(str => str + siteExclusiveIdentifier));
+        const quoteIndex = 0;  //We have objects at home
+        const nameIndex = 1;  
 
+        const merged = quotes.concat(siteExclusiveQuotes.map(q => [q[quoteIndex] + siteExclusiveIdentifier, q[nameIndex]])); //I hate you
+        console.log(merged);
         function quoteMe() {
 
-            let quotes = siteExclusivesOnly ? merged.filter(str => str.includes(siteExclusiveIdentifier)) : merged;
+            let quotes = siteExclusivesOnly ? merged.filter(q => q[quoteIndex].includes(siteExclusiveIdentifier)) : merged;
 
-            let quote = quotes[Math.floor(Math.random() * quotes.length)];
+            let q = quotes[Math.floor(Math.random() * quotes.length)];
+            let name = q[nameIndex];
+            let quote = q[quoteIndex];
 
             if (quote.includes(siteExclusiveIdentifier)) {
                 console.log("exclusive quote")
@@ -28,11 +33,11 @@
             } else {
                 document.getElementById("exclusive").style.visibility = "hidden";
             }
-            document.getElementById("quoteText").innerHTML = quote[0];
-            document.getElementById('image').src = 'img/' + quote[1] + '.jpg';
+            document.getElementById("quoteText").innerHTML = quote;
+            document.getElementById('image').src = 'img/' + name + '.jpg';
         }
 
-        // Wide Hayden Passcode
+        // Wide People Passcode
         // Gone change this to the konami code
         let pass = '';
         const passcode = "wide";
