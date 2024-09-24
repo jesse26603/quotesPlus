@@ -10,7 +10,7 @@ const quotes = [
 ['She got me making noises like doodlebob - Sam', 'sam'],
 ['WHAT TYPE OF COLOR IS PINKLE???? - Mr. Money', 'jack'],
 ['I\'m hayden. Coding. Squatter sim. Soda!!!! Blackmail. - Lynn', 'lynn'],
-['Tell them how you lied about the weapons of mass destruction in Iraq! - Isaiah', ' isaiah'],
+['Tell them how you lied about the weapons of mass destruction in Iraq! - Isaiah', 'isaiah'],
 ['Oh yeah. Oh yeah. Oh yeah. Oh yeah. Mmm… - Lynn', 'lynn'],
 ['Shut up before I kiss you on the lips. -Jesse', 'jesse'],
 ['YOU SQUIRTED ALL OVER MY HEADPHONES - Bryce', 'bryce'],
@@ -32,7 +32,14 @@ const quotes = [
 ['I\'m an independent manwhore. I whore myself out without a pimp - Jesse', 'jesse'],
 ['She\'s very corn fed! - Jesse', 'jesse'],
 ['Yeah get to digging Connor you digger - John Showman', 'john'],
-['Day is never finished, master got me working, someday master set me free - Mr. Yeager', 'connor']
+['Day is never finished, master got me working, someday master set me free - Mr. Yeager', 'connor'],
+['IM DYSLEXIC COLOR BOY! -Penny', 'penny'],
+['You have contributed nothing except for looking at weird women on your computer - Penny', 'penny'],
+['Grandma Nutt freaky? - Sam', 'sam'],
+['I hope Mr. Smith checks his Sigma Mail - Steven', 'steven'],
+['“Jesse, you look like someone to eat bananas for the shape and not the taste” “Sam, I\'m fucking gay.” - Jesse & Sam', 'sam'],
+['You\'re right, I do got a squirt. Do you know where the squirter is? - Chicken Sandwich', 'tyler'],
+['WE GOT REACT AT HOME! … It doesn\'t work - Hayden', 'hayden']
 ]
 
 const siteExclusiveQuotes = [
@@ -42,6 +49,8 @@ const siteExclusiveQuotes = [
 ['I\'m a 17 year old boy in a 17 year old boy\'s body. - Chicken Sandwich', 'tyler'],
 ['I have the soul of someone my age - Chicken Sandwich', 'tyler'],
 ['I am glad my uber-autism and extremely low social skills have contributed to your project - Chicken Sandwich', 'tyler'],
-['Me swinging my frank around - Jesse', 'jesse']
+['Me swinging my frank around - Jesse', 'jesse'],
+['I\'m not curious. I know what I like. I like DICK', 'jesse'],
+['You wanna know how I got this lazy eye? Do you wanna know how I gained all this WEIGHT - Chicken Sandwich', 'tyler']
 ]
 //amogus sus
