@@ -39,7 +39,14 @@ const quotes = [
 ['I hope Mr. Smith checks his Sigma Mail - Steven', 'steven'],
 ['“Jesse, you look like someone to eat bananas for the shape and not the taste” “Sam, I\'m fucking gay.” - Jesse & Sam', 'sam'],
 ['You\'re right, I do got a squirt. Do you know where the squirter is? - Chicken Sandwich', 'tyler'],
-['WE GOT REACT AT HOME! … It doesn\'t work - Hayden', 'hayden']
+['WE GOT REACT AT HOME! … It doesn\'t work - Hayden', 'hayden'],
+['I\'m not built *different*. I\'m built WRONG. - Jesse', 'jesse'],
+['My friends and I... we\'re all very mentally ill. - Jesse', 'jesse'],
+['You hawk gyatt tuah be rizzing me! - Steven', 'steven']
+['The pussy? That\'s where girls pee! - Lynn', 'lynn'],
+['The butthole? That’s where the poop comes out. Nice! - Hayden', 'hayden']
+['"Is she a futanari?" "No, she\'s just a man" - Hayden & Jesse', 'hayden'],
+['Some words, like the n-word, should be reserved for gamers - Mr. Smith', 'ytech']
 ]
 
 const siteExclusiveQuotes = [
@@ -51,6 +58,8 @@ const siteExclusiveQuotes = [
 ['I am glad my uber-autism and extremely low social skills have contributed to your project - Chicken Sandwich', 'tyler'],
 ['Me swinging my frank around - Jesse', 'jesse'],
 ['I\'m not curious. I know what I like. I like DICK', 'jesse'],
-['You wanna know how I got this lazy eye? Do you wanna know how I gained all this WEIGHT - Chicken Sandwich', 'tyler']
+['You wanna know how I got this lazy eye? Do you wanna know how I gained all this WEIGHT - Chicken Sandwich', 'tyler'],
+['*flicks tongue* - Chicken Sandwich', 'tyler'],
+['I wasn\'t bullying her, no! ... well, maybe a little bit, but-', 'hayden']
 ]
 //amogus sus

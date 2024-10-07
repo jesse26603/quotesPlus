@@ -394,5 +394,6 @@ const siteExclusiveQuotes = [
     "read up frickers",
     "YOU GAVE JESSE SPACE AIDS",
     'You know what you did, you dirty little rat boy.',
-    '*cringe dancing* that\'s the happy birthday dance!'
+    '*cringe dancing* that\'s the happy birthday dance!',
+    'sticky explosion'
 ];
