@@ -1,68 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hayden's Quotes</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-image" href="img/favicon.ico">
-    <script src="haydenQuotes.js"></script>
-    <script>
-
-        const siteExclusiveIdentifier = '[site exclusive]';
-        const siteExclusivesOnly = false;
-
-        const merged = quotes.concat(siteExclusiveQuotes.map(str => str + siteExclusiveIdentifier));
-
-        function quoteMe() {
-
-            let quotes = siteExclusivesOnly ? merged.filter(str => str.includes(siteExclusiveIdentifier)) : merged;
-
-            let quote = quotes[Math.floor(Math.random() * quotes.length)];
-
-            if (quote.includes(siteExclusiveIdentifier)) {
-                console.log("exclusive quote")
-                quote = quote.replace(siteExclusiveIdentifier, '');
-                document.getElementById("exclusive").style.visibility = "visible";
-            } else {
-                document.getElementById("exclusive").style.visibility = "hidden";
-            }
-            document.getElementById("quoteText").innerHTML = quote;
+    <style>
+        body {
+            background-color: #FF9CEE;
         }
-
-        // Wide Hayden Passcode
-        // Gone change this to the konami code
-        let pass = '';
-        const passcode = "wide";
-        let audio = new Audio('audio/WIDE.wav');
-        document.addEventListener('keydown', function (event) {
-            pass += event.key;
-            if (pass == passcode) {
-                audio.play();
-                document.getElementById("hayden").style.width = "80em";
-                document.getElementById("hayden").style.transition = "width 2s ease";
-                pass = ''
-                // console.log("widness")
-            }
-            if (pass.length >= passcode.length) {
-                pass = '';
-                // console.log("nuh uh")
-            }
-        });
-    </script>
+    </style>
 </head>
-
 <body>
-    <div>
-        <h1>Wise Words of Hayden Parker Frobenius</h1>
+    <div class="pages">
+        <a href="hayden.html">Hayden</a>
     </div>
-    <img src="img\hayden.jpg" alt="hayd" id="hayden">
-    <div id="quoteBox">
-        <h2 id="exclusive">website exclusive!</h2>
-        <h2 id="quoteText">Click the button for some wisdom</h2>
+    <div class="pages">
+        <a href="isaiah.html">Isaiah</a>
     </div>
-    <button onclick="quoteMe()">Nevermore Nevermore, Quoth the Raven</button>
+    <div class="pages">
+        <a href="people.html">People</a></p>
+    </div>
 </body>
-
 </html>

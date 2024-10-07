@@ -395,5 +395,6 @@ const siteExclusiveQuotes = [
     "YOU GAVE JESSE SPACE AIDS",
     'You know what you did, you dirty little rat boy.',
     '*cringe dancing* that\'s the happy birthday dance!',
-    'sticky explosion'
+    'sticky explosion',
+    'I\'M GONNA GET YOU. I\'M GONNA EAT YOU. I\'M GONNA EAT YOU REAL DRY'
 ];

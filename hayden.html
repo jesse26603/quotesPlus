@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaiah's Quotes</title>
+    <title>Hayden's Quotes</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-image" href="img/favicon.ico">
-    <script src="isaiahQuotes.js"></script>
+    <script src="haydenQuotes.js"></script>
     <style>
         body {
-            background-color: #afc5d6;
+            background-color: #ffbb5b;
         }
     </style>
     <script>
@@ -36,7 +36,7 @@
             document.getElementById("quoteText").innerHTML = quote;
         }
 
-        // Wide Isaiah Passcode
+        // Wide Hayden Passcode
         // Gone change this to the konami code
         let pass = '';
         const passcode = "wide";
@@ -45,8 +45,8 @@
             pass += event.key;
             if (pass == passcode) {
                 audio.play();
-                document.getElementById("isaiah").style.width = "80em";
-                document.getElementById("isaiah").style.transition = "width 2s ease";
+                document.getElementById("hayden").style.width = "80em";
+                document.getElementById("hayden").style.transition = "width 2s ease";
                 pass = ''
                 // console.log("widness")
             }
@@ -60,14 +60,14 @@
 
 <body>
     <div>
-        <h1>Wise Words of Isaiah Toby Knaby</h1>
+        <h1>Wise Words of Hayden Parker Frobenius</h1>
     </div>
-    <img src="img\isaiah.jpg" alt="Isaiah" id="isaiah">
+    <img src="img\hayden.jpg" alt="hayd" id="hayden">
     <div id="quoteBox">
         <h2 id="exclusive">website exclusive!</h2>
-        <h2 id="quoteText">Click the button, Toby! Whipish!</h2>
+        <h2 id="quoteText">Click the button for some wisdom</h2>
     </div>
-    <button onclick="quoteMe()">That's Nice. Do you want a quote?</button>
+    <button onclick="quoteMe()">Nevermore Nevermore, Quoth the Raven</button>
 </body>
 
 </html>
